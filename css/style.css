@@ -121,7 +121,7 @@ header {
     display: flex;
     justify-content: flex-start;
     gap: 15px;
-   margin-left: 10px;
+    margin-left: 10px;
 
 }
 
@@ -129,10 +129,10 @@ header {
     background: var(--real-color);
     border-color: transparent;
     color: #fff;
-    padding: 15px 15px ;
+    padding: 15px 15px;
     border-radius: 5px;
     font-size: 16px;
-    
+
 }
 
 .butonlar button:nth-child(2) {
@@ -167,7 +167,8 @@ header {
     padding: 10px;
     transition: .5s ease all;
 }
-.bottom-list .item:hover{
+
+.bottom-list .item:hover {
     transform: scale(1.1);
 }
 
@@ -220,22 +221,32 @@ header {
 }
 
 /* section kublar */
-section.bloklar{
+section.bloklar {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
-    
+    flex-wrap: wrap;
+
+
 }
-section.bloklar .blok{
+
+section.bloklar .blok {
+    height: 340px;
     text-align: center;
     margin-top: 20px;
     border-radius: 7px;
     background: rgba(255, 255, 255, 0.08);
+    transition: .8s ease all;
+    cursor: pointer;
+}
+
+section.bloklar .blok:hover {
+    box-shadow: -2px -2px 20px rgba(255, 255, 255, 0.5);
 
 }
 
-section.bloklar .blok h4{
+section.bloklar .blok h4 {
     opacity: 0.7;
 }
 
@@ -258,10 +269,6 @@ section.bloklar .blok h4{
         width: 600px;
         display: block;
     }
-
-
-
-
 
     /* first section responsive for the table */
     .introduction-section {
@@ -343,6 +350,23 @@ section.bloklar .blok h4{
     }
 }
 
+/* section bloklar */
+
+section.bloklar {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+section.bloklar .blok {
+    margin: 10px;
+    width: 350px;
+}
+section.bloklar .blok h4{
+    font-size: 18px;
+}
+
 /* Responsive design for the LAPTOP */
 
 @media(min-width:921px) {
@@ -355,6 +379,7 @@ section.bloklar .blok h4{
     .logo img {
         width: 100%;
     }
+
     /* first section resposive for the laptop */
 
     .introduction-section {
@@ -399,20 +424,22 @@ section.bloklar .blok h4{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        
+
     }
 
-    .bottom-list .items-1{
+    .bottom-list .items-1 {
         display: flex;
         justify-content: space-between;
         gap: 20px;
     }
-    .bottom-list .items-2{
+
+    .bottom-list .items-2 {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
 
     }
+
     /* second section resposive for the laptop */
 
     .second-section {
@@ -429,24 +456,40 @@ section.bloklar .blok h4{
     .second-section .second-page-1 img {
         width: 100%;
     }
+
     .second-section .second-page-texts h1 {
         font-size: 40px;
         text-align: left;
         margin: 10px;
     }
-    
+
     .second-section .second-page-texts h6 {
         font-size: 16px;
         text-align: left;
-        margin: 30px 10px 10px 10px ;
-        
-    }
-    
-    .second-section button {
-     position: relative;
-     left: 10px;
-    
+        margin: 30px 10px 10px 10px;
+
     }
 
+    .second-section button {
+        position: relative;
+        left: 10px;
+
+    }
+
+    /* section bloklar */
+    section.bloklar {
+        width: 100wh;
+    }
+
+    section.bloklar .blok {
+        width: 209px;
+    }
+    section.bloklar .blok h2{
+        font-size: 16px;
+    }
+    section.bloklar .blok h4{
+        font-size: 14px;
+        opacity: 0.4;
+    }
 
 }
