@@ -242,13 +242,45 @@ section.bloklar .blok {
 }
 
 section.bloklar .blok:hover {
-    box-shadow: -2px -2px 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px 1.3px rgba(255, 255, 255, 0.5);
 
 }
 
 section.bloklar .blok h4 {
     opacity: 0.7;
 }
+
+/* our solutions section   */
+
+.our-solutions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.our-solutions .our-solutions-left-side h1 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.our-solutions .our-solutions-left-side p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.our-solutions .our-solutions-right-side {
+    width: 290px;
+}
+
+.our-solutions .our-solutions-right-side img {
+    width: 100%;
+    padding-top: 20px;
+}
+
+
 
 
 
@@ -348,24 +380,41 @@ section.bloklar .blok h4 {
     .second-section .second-page-texts {
         padding: 30px;
     }
+
+    /* section bloklar */
+
+    section.bloklar {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 40px;
+
+    }
+
+    section.bloklar .blok {
+        margin: 10px;
+        width: 350px;
+    }
+
+    section.bloklar .blok h4 {
+        font-size: 18px;
+    }
+
+    /* our solutions section */
+    .our-solutions .our-solutions-left-side h1{
+        text-align: center;
+        font-size: 60px;
+    }
+    .our-solutions .our-solutions-left-side p{
+      
+        font-size: 26px;
+    }
+    .our-solutions .our-solutions-right-side {
+        width: 600px;
+        padding-top: 40px;
+    }
+    
 }
 
-/* section bloklar */
-
-section.bloklar {
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 40px;
-
-}
-
-section.bloklar .blok {
-    margin: 10px;
-    width: 350px;
-}
-section.bloklar .blok h4{
-    font-size: 18px;
-}
 
 /* Responsive design for the LAPTOP */
 
@@ -478,18 +527,50 @@ section.bloklar .blok h4{
 
     /* section bloklar */
     section.bloklar {
+        flex-direction: row;
+        justify-content: space-around;
         width: 100wh;
     }
 
     section.bloklar .blok {
         width: 209px;
+
     }
-    section.bloklar .blok h2{
+
+    section.bloklar .blok h2 {
         font-size: 16px;
     }
-    section.bloklar .blok h4{
+
+    section.bloklar .blok h4 {
         font-size: 14px;
         opacity: 0.4;
+    }
+
+    /* our solutions resposive for the laptop */
+    .our-solutions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 60px;
+    }
+
+    .our-solutions .our-solutions-left-side h1 {
+        text-align: left;
+        font-size: 42px;
+    }
+
+    .our-solutions .our-solutions-left-side p {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .our-solutions .our-solutions-right-side {
+        width: 600px;
+    }
+
+    .our-solutions .our-solutions-right-side img {
+        width: 100%;
+        padding-top: 40px;
     }
 
 }
