@@ -525,6 +525,9 @@ footer .social label {
     .social a{
         font-size: 90px;
     }
+    footer .social h1{
+        text-align: left;
+    }
 }
 
 
